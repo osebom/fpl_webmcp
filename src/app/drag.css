@@ -1,0 +1,1 @@
+.player[draggable="true"]{cursor:grab}.player[draggable="true"]:active{cursor:grabbing;opacity:.65}.role-targets{position:absolute;left:48px;top:10px;z-index:3;display:flex;gap:5px}.role-targets button{width:28px;height:28px;border:1px dashed #050505;border-radius:50%;background:#fff;color:#050505;font:600 9px "Google Sans Code",monospace}

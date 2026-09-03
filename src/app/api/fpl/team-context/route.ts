@@ -1,0 +1,3 @@
+import { NextRequest, NextResponse } from "next/server";
+import { getTeamFixtures, getTeamResults } from "@/lib/player-query";
+export async function GET(request:NextRequest){const teamId=Number(request.nextUrl.searchParams.get("teamId"));if(!Number.isInteger(teamId)||teamId<1)return NextResponse.json({error:"teamId must be a positive integer."},{status:400});const gameweeks=request.nextUrl.searchParams.get("gameweeks")?.split(",").map(Number).filter(Number.isFinite);const mode=request.nextUrl.searchParams.get("mode");return NextResponse.json(mode==="results"?await getTeamResults(teamId):await getTeamFixtures(teamId,gameweeks))}

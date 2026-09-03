@@ -1,0 +1,22 @@
+import "./globals.css";
+import "./transfer.css";
+import "./transfer-layout.css";
+import "./transfer-note.css";
+import "./restore.css";
+import "./badges.css";
+import "./market-badges.css";
+import "./fixtures.css";
+import "./pitch-layout.css";
+import "./transfer-emphasis.css";
+import "./space.css";
+import "./transfer-note-size.css";
+import "./card-metrics.css";
+import "./readability.css";
+import "./restore-badge.css";
+import "./field.css";
+import "./field-lines.css";
+import "./field-inset.css";
+import "./drag.css";
+import "./midfield.css";
+export const metadata={title:"FPL Planner",description:"Read-only FPL planning workspace"};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
